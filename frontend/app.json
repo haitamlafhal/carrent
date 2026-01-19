@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "CarRental",
+    "slug": "rented",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "scheme": "carrental",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1a1a2e"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.carrental.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "We need your location to show nearby rental agencies.",
+        "NSLocationAlwaysUsageDescription": "We need your location to show nearby rental agencies.",
+        "NSCameraUsageDescription": "We need camera access to take photos of your driver's license and vehicle.",
+        "NSPhotoLibraryUsageDescription": "We need access to your photos to upload your driver's license.",
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#1a1a2e"
+      },
+      "package": "com.carrental.app",
+      "permissions": [
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-location",
+      "expo-image-picker",
+      "expo-secure-store"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "2bef263d-59b4-479b-a88f-9a06610b60b1"
+      }
+    },
+    "owner": "drd0o0ms-organization"
+  }
+}
